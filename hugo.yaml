@@ -1,0 +1,69 @@
+baseURL: "https://example.com/"
+languageCode: "zh-cn"
+title: "AI Architect Notes"
+theme: "PaperMod"
+pagination:
+  pagerSize: 10
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "AI Architect Notes"
+  description: "AI Engineering, RAG, Agents, Evals, and architecture notes."
+  keywords:
+    - AI Engineering
+    - AI Architecture
+    - RAG
+    - Agents
+    - Evals
+  author: ""
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  comments: false
+  homeInfoParams:
+    Title: "AI Architect Notes"
+    Content: "记录 AI Engineering、RAG、Agent、Evals 和项目实践。"
+
+menu:
+  main:
+    - identifier: posts
+      name: Writing
+      url: /posts/
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+    - identifier: roadmaps
+      name: Roadmaps
+      url: /roadmaps/
+      weight: 30
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 40
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 50
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
